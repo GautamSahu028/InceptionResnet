@@ -127,7 +127,8 @@ class FaceRecognizer:
 #     if os.path.exists("embeddings.pth"):
 #         recognizer.load_embeddings("embeddings.pth")
 #     else:
-#         recognizer.train_on_multiple("marvel")
+#         recognizer.train_on_multiple("static/marvel")
+#         recognizer.train_on_multiple("static/GOT2")
 #         recognizer.save_embeddings("embeddings.pth")
 
 #     recognizer.detect_faces("train.jpg")
