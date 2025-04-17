@@ -119,15 +119,15 @@ class FaceRecognizer:
             print(f"No saved embeddings found at {path}")
 
 
-# if __name__ == "__main__":
-#     recognizer = FaceRecognizer()
+if __name__ == "__main__":
+    recognizer = FaceRecognizer()
 
-#     if os.path.exists("embeddings.pth"):
-#         recognizer.load_embeddings("embeddings.pth")
-#     else:
-#         recognizer.train_on_multiple("static/NITR")
-#         # recognizer.train_on_multiple("static/GOT2")
-#         recognizer.save_embeddings("embeddings.pth")
+    if os.path.exists("embeddings.pth"):
+        recognizer.load_embeddings("embeddings.pth")
+    else:
+        recognizer.train_on_multiple("static/marvel")
+        recognizer.train_on_multiple("static/GOT2")
+        recognizer.save_embeddings("embeddings.pth")
 
-#     recognizer.detect_faces("train.jpg")
-#     recognizer.predict_unknown_faces()
+    # recognizer.detect_faces("train.jpg")
+    # recognizer.predict_unknown_faces()
