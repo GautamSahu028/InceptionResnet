@@ -1,8 +1,6 @@
 fastapi
-uvicorn
-facenet-pytorch
+uvicorn[standard]
 torch
 torchvision
 Pillow
-python-multipart
-
+facenet-pytorch
